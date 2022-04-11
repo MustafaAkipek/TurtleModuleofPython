@@ -1,0 +1,43 @@
+import turtle
+
+def rvurgu():
+    for i in range(30):
+        t.forward(3)
+        t.right(3)
+def lvurgu():
+    for i in range(50):
+        t.forward(3)
+        t.left(2)
+t = turtle.Turtle()
+s = turtle.Screen()
+t.begin_fill()
+t.fillcolor("white")
+t.hideturtle()
+t.speed(5)
+t.pensize(3)
+s.bgcolor("blue")
+t.penup()
+t.goto(0,-500)
+t.pendown()
+t.goto(0,-100)
+t.goto(100,-100)
+t.goto(125,0)
+t.goto(0,0)
+t.left(90)
+t.forward(50)
+rvurgu()
+t.forward(75)
+t.left(90)
+t.forward(75)
+t.left(90)
+t.forward(120)
+lvurgu()
+t.goto(-75,-0)
+t.goto(-185,-0)
+t.goto(-185,-95)
+t.goto(-75,-95)
+t.goto(-75,-500)
+t.goto(0,-500)
+t.end_fill()
+
+turtle.done()
